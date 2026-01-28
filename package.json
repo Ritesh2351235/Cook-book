@@ -27,5 +27,13 @@
     "react-native-safe-area-context": "^5.6.2",
     "react-native-screens": "^4.20.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.28.6",
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-native": "^5.0.0",
+    "globals": "^17.2.0"
+  }
 }
