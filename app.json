@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "CookSnap",
+    "slug": "cooksnap",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFD700"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "CookSnap needs camera access to scan your groceries and create shopping lists.",
+        "NSPhotoLibraryUsageDescription": "CookSnap needs photo library access to pick images for grocery scanning."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFD700"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "CookSnap needs camera access to scan your groceries."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CookSnap needs photo library access to pick images for grocery scanning."
+        }
+      ]
+    ]
+  }
+}
